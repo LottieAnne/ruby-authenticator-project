@@ -21,6 +21,7 @@ while attempts < 4
     users.each do |user|
         if user[:username] == username && user[:password] == password
             puts user
+            break
         else
             puts "Credentials were not correct"
         end
